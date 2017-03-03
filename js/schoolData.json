@@ -1,0 +1,123 @@
+[
+		{
+			"num":"1",
+			"English":"Holyke Catholic High School",
+			"Chinese":"霍利奥克中学",
+			"website":"http://www.gaels.com/",
+			"state":"MA",
+			"city":"Chicopee",
+			"nature":"Private",
+			"type":"Co-ed",
+			"style":"DaySchool"
+	    },
+	    {
+			"num":"2",
+			"English":"Berkshire School",
+			"Chinese":"伯克希尔中学",
+			"website":"http://www.gaels.com/",
+			"state":"BA",
+			"city":"Chicopee",
+			"nature":"Private",
+			"type":"Co-ed",
+			"style":"DaySchool"
+	    },
+	    {
+			"num":"3",
+			"English":"Brooks School",
+			"Chinese":"布鲁克斯中学",
+			"website":"http://www.gaels.com/",
+			"state":"CA",
+			"city":"Chicopee",
+			"nature":"Private",
+			"type":"Co-ed",
+			"style":"DaySchool"
+	    },
+	    {
+			"num":"4",
+			"English":"Concord Academy",
+			"Chinese":"康纳德中学",
+			"website":"http://www.gaels.com/",
+			"state":"DA",
+			"city":"Chicopee",
+			"nature":"Private",
+			"type":"Co-ed",
+			"style":"DaySchool"
+	    },
+	    {
+			"num":"5",
+			"English":"Lawrence Academy",
+			"Chinese":"劳伦斯中学",
+			"website":"http://www.gaels.com/",
+			"state":"EA",
+			"city":"Chicopee",
+			"nature":"Private",
+			"type":"Co-ed",
+			"style":"DaySchool"
+	    },
+	    {
+			"num":"6",
+			"English":"The Governors Academy",
+			"Chinese":"咖文纳中学",
+			"website":"http://www.gaels.com/",
+			"state":"FA",
+			"city":"Chicopee",
+			"nature":"Private",
+			"type":"Co-ed",
+			"style":"DaySchool"
+	    },
+	    {
+			"num":"7",
+			"English":"The MacDuffie School",
+			"Chinese":"马杜菲中学",
+			"website":"http://www.gaels.com/",
+			"state":"GA",
+			"city":"Chicopee",
+			"nature":"Private",
+			"type":"Co-ed",
+			"style":"DaySchool"
+	    },
+	    {
+			"num":"8",
+			"English":"The Winchendon School",
+			"Chinese":"温彻顿中学",
+			"website":"http://www.gaels.com/",
+			"state":"HA",
+			"city":"Chicopee",
+			"nature":"Private",
+			"type":"Co-ed",
+			"style":"DaySchool"
+	    },
+	    {
+			"num":"9",
+			"English":"Worcester Academy",
+			"Chinese":"伍斯特学院",
+			"website":"http://www.gaels.com/",
+			"state":"IA",
+			"city":"Chicopee",
+			"nature":"Private",
+			"type":"Co-ed",
+			"style":"DaySchool"
+	    },
+	    {
+			"num":"10",
+			"English":"Falmouth Academy",
+			"Chinese":"福莫斯学院",
+			"website":"http://www.gaels.com/",
+			"state":"JA",
+			"city":"Chicopee",
+			"nature":"Private",
+			"type":"Co-ed",
+			"style":"DaySchool"
+	    },
+	    {
+			"num":"11",
+			"English":"Sparhawk School",
+			"Chinese":"斯巴霍克学校",
+			"website":"http://www.gaels.com/",
+			"state":"KA",
+			"city":"Chicopee",
+			"nature":"Private",
+			"type":"Co-ed",
+			"style":"DaySchool"
+	    }
+]

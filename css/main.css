@@ -1,0 +1,319 @@
+//主页部分CSS样式
+.public{
+	width: 100%;
+	max-width:1920px;
+	margin:0 auto;
+}
+.header{
+	background:#212121;
+	height:54px;
+	position: relative;
+}
+.header img{
+	margin:14px 0 0 34px;
+}
+
+.content{
+	height:1118px;
+	position:absolute;
+	left:0;
+	right:0;
+	top:54px;
+}
+.content .tab-car{
+	width:200px;
+	height:1118px;
+	position: absolute;
+	background:#3a3f52;
+	left:0;
+	top:0;
+	z-index:1;
+}
+.content .tab-car .index{
+	width:200px;
+	height:50px;
+	background:#746bba url(../img/tab-icon-index.png) no-repeat 52px center;
+	text-align: center;
+}
+.content .tab-car .index a{
+	font-size:16px;
+	color:#fff;
+	text-align: center;
+	display: inline-block;
+	line-height:50px;
+
+}
+.content .tab-car .item,p{
+	width:200px;
+	height:50px;
+	text-align: center;
+	line-height:50px;
+}
+.content .tab-car p{
+	background: #303548;
+	display:none;
+}
+.content .tab-car .pub a{
+	font-size:14px;
+	color:#b6b8bf;
+}
+.content .main-content{
+	height:1118px;
+	position: absolute;
+	background:#F4F4F4;
+	left:200px;
+	top:0;
+	right:0;
+}
+.content .main-content .content-header{
+	height:48px;
+	border-bottom:2px solid #ccc;
+	background:url(../img/home.png) no-repeat 22px center;
+	line-height:50px;
+}
+.content-header .point{
+	margin-left:42px;
+}
+.content-header .point a{
+	color:#454545;
+	font-size:13px;
+}
+//离境学生CSS样式
+.leaveStudy{
+	height:1118px;
+
+}
+.addSchool{
+	width:74%;
+	height:344px;
+	background: red;
+	margin:20px 23px 0 30px;
+	border: 1px solid #e5e5e5;
+	background: #fff url(../img/school-ico.png) no-repeat center 84px;
+	position: relative;
+}
+
+.newAddTitle{
+	height:54px;
+	border-bottom: 1px solid #e5e5e5;
+}
+.newAddTitle h3{
+	font-size:16px;
+	color:#111;
+	margin:22px 0 0 42px;
+}
+.newAddTitle button{
+	width:96px;
+	height:28px;
+	text-align:center;
+	background: #42bf51;
+	color:#fff;
+	border:none;
+	border-radius:10px ;
+	margin:15px 30px 0 0;
+	font-size:12px;
+}
+.addSchool .add{
+	width:30%;
+	height:76px;
+	border:1px dashed #ccc;
+	background: #fff;
+	margin:120px 0 0 478px;
+	position: absolute;
+	top:100px;
+	left:50%;
+	margin-left:-15%;
+	outline: none;
+	cursor: pointer;
+}
+
+.studentInfo{
+	width:20%;
+	height:300px;
+	margin-top:20px;
+	background: blue;
+	border: 1px solid #e5e5e5;
+	background:#fff;
+	text-align:center;
+	padding-top:34px;
+}
+.studentInfo dt{
+	height:20px;
+	font-size:15px;
+	color:#4a4a4a;
+	margin-bottom:14px !important;
+}
+.studentInfo dd span{
+	font-size:12px;
+	color:#b2b2b2;
+}
+.studentInfo img{
+	margin:28px 0 28px 0;
+}
+
+.schoolInfo{
+	width: 100%;
+	height:1118px;
+	background:#000;
+	opacity:0.5;
+	position: absolute;
+	left:0;
+	top:0;
+	z-index:666;
+}
+
+.schoolList{
+	width:90%;
+	height:80%;
+	position: absolute;
+	top:150px;
+	left:50%;
+	margin-left:-45%;
+	background:#fff;
+	z-index:999;
+}
+.schoolList .schoolSearch{
+	width:94%;
+	height:40px;
+	background:#f8f8f8;
+	line-height:40px;
+	margin-top:16px;
+	margin-left:1%;
+	margin-bottom:16px;
+}
+.schoolSearch select{
+	width:31%;
+	position:absolute;
+	top:50px;
+	right:6.4%;
+}
+.schoolSearch span{
+		font-size:16px;
+		color:#000;
+		font-weight: 500;
+		margin-left:26px;
+}
+.schoolSearch input{
+	margin:5px 14px 0 0 !important;
+	width:33%;
+	height:28px;
+	border: 1px solid #ccc;
+	outline: none;
+}
+.schoolTable{
+	width:98%;
+	height:90%;	
+	margin:0 1%;
+	
+}
+.schoolTable .confirm{
+	width:180px;
+	height:44px;
+	text-align: center;
+	color:#fff;
+	border:none;
+	border-radius: 6px;
+	background:#52bc54;
+	position: absolute;
+	top:80%;
+	left:50%;
+	margin-left:-90px;
+	
+}
+.schoolTable table tr:first-child td{
+	height:40px;
+	background:#42bf51;
+	color:#fff;
+}
+.schoolTable table td{
+	height:40px;	
+	font-size:10px;
+	text-align:center;
+}
+.schoolTable .choosed{
+	width:98%;
+	height:48px;
+	margin: 30px 0 1%;
+	border-top:1px solid #ccc;
+	border-bottom:1px solid #ccc;
+	padding-top:12px;
+	
+}
+.schoolTable .choosed span{
+	display: block;
+	width:80px;
+	height:48px;
+	font-size:14px;
+	color:#111;
+}
+.schoolTable .choosed li{
+	font-size:14px;
+	color:#111;
+	padding:0px 20px 0 !important;
+	line-height:20px !important;
+}
+
+.school-confirm{
+	width:96%;
+	height:500px;	
+	margin:0 1%;
+	background:#fff;
+	position: absolute;
+	top:440px;
+	left:20px;
+}
+.school-confirm table tr:first-child td{
+	height:40px;
+	background:#fff;
+	color:#979797;
+	text-align:center;
+}
+.school-confirm table td{
+	height:80px;	
+	font-size:10px;
+	text-align:center;
+	color:#111;
+	font-weight:700;
+}
+.school-confirm table td dt{
+	font-size:16px;
+	color:#42bf51;
+	text-align:left;
+	padding-left:20px !important;
+}
+.school-confirm table td h2{
+	font-size:16px;
+	color:#242424;
+	float:left;
+	margin:10px 10px 0 40px !important;
+}
+.school-confirm table td span{
+	float:left;
+	font-size:10px;
+	color:#42bf51;
+	margin-top:16px;
+}
+.school-confirm table td button{
+	width:96px;
+	height:40px;
+	text-align: center;
+	color:#fff;
+	border:none;
+	border-radius: 6px;
+	background:#e85753;
+	outline: none;
+}
+.noData{
+	width:500px;
+	height:500px;
+	text-align: center;
+	font-size:30px;
+	color:#ccc;
+	line-height:500px;
+	position: absolute;
+	left:50%;
+	top:50%;
+	margin-top:-250px;
+	margin-left:-250px
+
+}

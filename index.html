@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html ng-app ="myApp">
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="css/main.css" />
+		<link rel="stylesheet" href="css/reset.css" />
+	</head>
+	<body>
+		<div id="main" ng-controller="control">
+			<div class="header public">
+				<h1>
+					<a href="http://www.xdf.cn">
+						<img src="img/header-Log.png" alt="新东方" />
+					</a>
+				</h1>
+			</div>
+			<div class="content public">
+				<div class="tab-car">
+					<div class="index" ng-click="hide()">
+						<a href="#/home">首页</a>
+					</div>
+					<div class="item pub" ng-click="changePoint()">
+						<a href="#">{{tabCar[0]}}</a>
+			   		</div>
+			   		<p class="pub" ng-click="onTheWay()">
+			   			<a href="#/onTheWay">在途学生</a>
+			   		</p>
+			   		<p class="pub">
+			   			<a href="#/leave" ng-click="leave()">离境学生</a>
+			   		</p>
+			   		<div class="item pub">
+						<a href="#/apply">{{tabCar[1]}}</a>
+			   		</div>
+			   		<div class="item pub">
+						<a href="#/workFile">{{tabCar[2]}}</a>
+			   		</div>
+			   		<div class="item pub">
+						<a href="#/commissions">{{tabCar[3]}}</a>
+			   		</div>
+			   		<div class="item pub">
+						<a href="#/notice">{{tabCar[4]}}</a>
+			   		</div>
+			   		
+
+				</div>
+				<div class="main-content">
+					<div class="content-header">
+						<div class="point">
+							<a href="#/home" ng-click="hide()">首页</a>
+							<a href="" ng-if="isShow"> > {{point}}</a>
+							<a href="" ng-if="ifShow"> > {{subNav}}</a>
+							
+						</div>
+						
+					</div>
+					<ng-view></ng-view>
+
+				</div>
+			</div>
+		</div>
+		<script src="js/jquery-1.8.3.min.js"></script>
+		<script src="js/angular.min.js"></script>
+		<script src="js/angular-route.min.js"></script>
+		<script src="js/main.js"></script>
+		<script src="js/controller.js"></script>
+		<script src="js/service.js"></script>
+	</body>
+</html>

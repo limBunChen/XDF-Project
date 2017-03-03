@@ -1,0 +1,153 @@
+<div class="leaveStudy" ng-controller="leaveCtrl">
+	<div class="addSchool fl">
+		<div class="newAddTitle">
+			<h3 class ="fl" >新建选校</h3>
+			<button class ="fr">&lt; 返回上级</button>
+			
+		</div>
+		<button class="add" ng-click="addSchool()">
+			添加新选校
+		</button>
+	</div>
+	<div class="studentInfo fl">
+		<dl>
+			<dt>
+				学生:叶锐
+			</dt>
+			<dd>
+				<span>当前顾问:庄星星</span>
+			</dd>
+			<dd>
+				<img src="img/confirm.png" alt="" />
+			</dd>
+			<dd>
+				<h4>当前状态</h4>
+			</dd>
+		</dl>
+	</div>
+	<div class="schoolInfo" ng-show="addShow">
+		
+	</div>
+	<div class="schoolList" ng-show="addShow">
+			<div class="schoolSearch">
+				<span>添加选校列表</span>
+				<input type="text" name="" id="" placeholder="请搜索关键字" class ="fr" ng-change="changeKeyValue(searchField)" ng-model="searchField""/>
+				<div ng-hide="hidden">
+					<select ng-change="change(x)" ng-model="x" multiple>  
+	            		<option ng-repeat="data in searchData" >{{data}}</option>  
+	      			</select>
+	      		</div>
+			</div>
+			<div class="schoolTable">
+				<table border="0" cellspacing="0" cellpadding="10">
+					<tr>
+						<td width="65">操作</td>
+						<td width="65">序号</td>
+						<td width="230">学校英文名字</td>
+						<td width="230">学校中文名字</td>
+						<td width="180">学校网址</td>
+						<td width="75">所在州</td>
+						<td width="98">所在城市/地区</td>
+						<td width="75">学校性质</td>
+						<td width="75">学校类型</td>
+						<td width="75">寄宿/走读</td>
+					</tr>
+					<tr ng-repeat="item in listData">
+						<td>
+							<input type="checkbox" ng-checked="isChecked(item.num,item.English)" ng-click="updateSelection($event,item.num,item.English,item.website,item.nature,item.type,item.style,item.Chinese)" />
+						</td>
+						<td>
+							{{item.num}}
+						</td>
+						<td>
+							{{item.English}}
+						</td>
+						<td>
+							{{item.Chinese}}
+						</td>
+						<td>
+							{{item.website}}
+						</td>
+						<td>
+							{{item.state}}
+						</td>
+						<td>
+							{{item.city}}
+						</td>
+						<td>
+							{{item.nature}}
+						</td>
+						<td>
+							{{item.type}}
+						</td>
+						<td>
+							{{item.style}}
+						</td>
+					</tr>
+
+				</table>
+				<div class="choosed">
+					<span class ="fl">已选择学校:</span>
+					<ul>
+						<li class="fl" ng-repeat="data in selected">
+							{{data.aid}}.{{data.english}}
+						</li>
+					</ul>
+					
+					
+				</div>
+				<button class="confirm" ng-click="confirm()">确认</button>
+				
+				
+		</div>
+s
+	</div>
+	<div class="school-confirm">
+	 	<table border="0" cellspacing="0" cellpadding="10">
+					<tr>
+						<td width="14%">学校名称/所在地区</td>
+						<td width="10%">学校网址</td>
+						<td width="10%">学校性质</td>
+						<td width="10%">学校类型</td>
+						<td width="10%">寄读/走读</td>
+						<td width="10%">操作</td>
+					</tr>
+					<tr ng-repeat="item in confirmData">
+						<td>
+							<dl>
+								<dt>
+									{{$index+1}}.{{item.english}}
+								</dt>
+								<dd>
+									<h2>{{item.china}}</h2>
+									<span>MA</span>
+									<span>/</span>
+									<span>Chicopee</span>
+								</dd>
+							</dl>
+						</td>
+						<td>
+							{{item.web}}
+						</td>
+						<td>
+							{{item.private}}
+						</td>
+						<td>
+							{{item.type}}
+						</td>
+						<td>
+							{{item.style}}
+						</td>
+						<td>
+							<button ng-click="deleteSchool(item.num)">删除</button>
+						</td>
+					</tr>
+					
+	 	</table>
+	 	<div class="noData" ng-if ="!confirmData.length">
+	 		暂无数据，请选择你喜欢的学校吧
+	 	</div>
+	</div>
+	 
+	
+</div>
